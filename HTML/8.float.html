@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style type="text/css">
+        .container {
+            width: 600px;
+            margin:  0 auto;
+            border: 2px solid #000;
+            margin-top:  200px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .div1 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color:  yellow;
+            float: left;
+        }
+        .div2 {
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            background-color:  #abcdef;
+            float: right;
+        }
+        /* clear 就是换行浮动 */
+        .div3 {
+            width: 250px;
+            height: 100px;
+            line-height: 100px;
+            background-color:  red;
+            clear: left;
+            float: left;
+        }
+        .div4 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: green;
+            float: left;
+        }
+        .div5 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: yellow;
+            clear: left;
+            float: left;
+        }
+        .div6 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color:  blue;
+            float: right;
+        }
+        .div7 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            background-color: green;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">div1</div>
+        <div class="div2">div2</div>
+        <div class="div3">div3</div>
+        <div class="div4">div4</div>            <div class="div5">div5</div>
+        <div class="div6">div6</div>
+        <div class="div7">div7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彩色方格</title>
+    <style type="text/css">
+        .box {
+            width: 400px;
+            height: auto;
+            border: 3px solid #000;
+            box-sizing: content-box;
+        }
+        div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid #000;
+            font-size: 40px;
+            text-align: center;
+            line-height: 96px;
+            box-sizing: border-box;
+        }
+        .bg-red {
+            background: #c00;
+        }
+        .bg-blue {
+            background: #336699;
+        }
+        .bg-yellow {
+            background: yellow;
+        }
+        .bg-green {
+            background: #0f7;
+        }
+        .bg-orange {
+            background: orange;
+        }
+        .div1 {
+            float: right;
+        }
+        .div2 {
+            float: right;
+        }
+        .div3 {
+            height: 200px;
+            /* 清楚右浮动是1,2的，然后换行 */
+            clear: right;
+            float: left;
+        }
+        .div4 {
+            float: left;
+        }
+        .div5 {
+            float: left;
+        }
+        .div6 {
+            float: right;
+        }
+        .div7 {
+            float: left;
+        }
+        .div8 {
+            width: 200px;
+        }
+        .div9 {
+            width: 200px;
+            float: right;
+        }
+    </style>
+    <div class="box">
+        <div class="bg-blue div1">1</div>
+        <div class="bg-green div2">2</div>
+        <div class="bg-yellow div3">3</div>
+        <div class="bg-red div4">4</div>
+        <div class="bg-orange div5">5</div>
+        <div class="bg-green div6">6</div>
+        <div class="bg-blue div7">7</div>
+        <div class="bg-blue div8">8</div>
+        <div class="bg-yellow div9">9</div>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

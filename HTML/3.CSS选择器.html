@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <link rel="icon" type="image/x-icon" href="/home/xiaxue/Desktop/前端/HTML/深度截图_选择区域_20200522233639.png">
+    <style>
+        /* 优先级： 元素：1、类：10、id：100、行内：1000 */
+        /* body的颜色 */
+        body {
+            background-color: cornsilk;
+        }
+        /* 类选择器 .开头的 */
+        .red {
+            color: red;
+        }
+        .blue {
+            background-color: #336677;
+            color: blue;
+        }
+        /* id属性 #开头的 */
+        #head {
+            border: 10px solid #336699;
+        }
+        /* body+div权重是2，比div权重高 */
+        body div {
+            font-size: 25px;
+        }
+        /* 所有的div标签中的 字体 都变成35px */
+        div {
+            font-size: 35px;
+            color: rgb(7, 7, 7);
+        }
+        div div {
+            height: 50px;
+            font-weight: 100px;
+            border: 5px solid salmon;
+            margin: 20px;
+        }
+        /* hover是伪类选择器 */
+        div div:hover {
+            /* 带阴影效果的 */
+            box-shadow: 5px 4px 0px 0px; 
+            /* 变小手 */
+            cursor: pointer;
+        }
+        /* 伪元素选择器 before、after */
+        body > div:before {
+            content: "分隔符";
+        }
+        body > div:after {
+            content: "---------------";
+        }
+        /* 没被访问过的样式 */
+        a:link {
+            background-color: yellow;
+        }
+        /* 访问过的效果 */
+        a:visited {
+            background-color: green;
+        }
+        /* 点击时的效果 */
+        a:active {
+            color: honeydew;
+        }
+        a:hover, a:active {
+            font-size: 150%;
+        }
+        p::first-letter{
+            font-size: 200%;
+            color: #000000;
+        }
+        p::first-line {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="head" style="color: pink;"> 这是 div 的内容</div>
+    <!-- 刷颜色与定义的先后有关，蓝色后定义就变成蓝色，与标签中的顺序无关 -->
+    <div class="red blue"> 这是 class 的 div 设置内容 </div>
+    <p class=" blue red"> 这是 class 的 p 设置内容</p>
+    <div>
+        <div>125</div>
+        <div>2</div>
+    </div>
+    <div>
+        <div>33</div>
+        <div>4</div>
+    </div>
+    <p> <a href="http://baidu.com" target="__blank"> 百度 </a> </p>
+    <p> <a href="http://haizeix.com" target="__blank"> 海贼宝藏 </a> </p>
+    <p> <a href="http://taobao.com" target="__blank"> 淘宝 </a> </p>
+    <p> 啥时候开学。。。 <br>
+        明天上午学校还有考试！！！ <br>
+        真是忙忙叨叨 (｡･∀･)ﾉﾞ <br>
+    </p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size</title>
+    <style type="text/css">
+        /* 解决那个缝的问题，将字体都变成0 */
+        /* body {
+            font-size: 0px;
+        } */
+        .div1 {
+            background: red;
+            background-clip: content-box;
+            width: 100px;
+            height: 100px;
+            /* 一个值就是 上下左右 一样，两个值就是上、右，对称的 没设置就是对称的 */
+            padding: 20px 30px 40px 50px;
+            /* border: 1px dotted #000; */
+            border-top: 30px solid yellow;
+            border-right: 30px solid blue;
+            border-bottom: 30px solid orange;
+            border-left: 30px solid purple;
+        }
+        a:nth-child(2) {
+            font-size: 22px;
+            color:green;
+            width: 200px;
+            /* 设置成内联块，块内元素可以改大小，行内元素不能改 */
+            display: inline-block;
+        }
+        .div2 {
+            background: red;
+            background-clip: content-box;
+            width: 0px;
+            height: 0px;
+            border-top: 30px solid yellow;
+            /* border-right: 30px solid blue; */
+            /* border-bottom: 30px solid orange; */
+            border-left: 40px solid purple;
+            border-left: 40px solid transparent;
+        }
+        .div3 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            /* display：可以将行内元素变成块元素，变块以后换行符也使一个字符，中间会有空格，这个要注意 */
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <a href="#">点击我 无效果</a>
+    <a href="#">点击我 无效果</a>
+    <div class="div2"></div>
+    <div class="div3">1</div>
+    <div class="div3">2</div>
+    <div class="div3">3</div>
+</body>
+</html>
