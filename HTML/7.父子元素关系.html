@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type=""text/css>
+    <title>Father-Child</title>
+    <style type="text/css">
         * {
             padding: 0;
             margin: 0;
@@ -14,9 +14,13 @@
             padding: 5px;
         }
         .father > div {
-            width: 90px;
+            /* 宽度内容区的大小 */
+            width: 90px;  
             border: 5px solid #000;
             padding: 2px;
+            /* box-sizing 是设置盒子大小的，当前就是 内容+padding+border = 90px ; 
+                这样会 防止 子元素溢出 ，注意的点
+            */
             box-sizing: border-box;
             margin: 5px;
         }

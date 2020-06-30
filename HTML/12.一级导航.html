@@ -5,30 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>实现一级导航栏</title>
     <style type="text/css">
-        body > ul {
-            width: 500px;
-            height: 500px;
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .box {
+            width: 600px;
+            height: 400px;
+            margin: 0px auto;
             background-color: #abcdef;
         }
-        .menu > li {
+        .box .nav {
+            width: 100%;
+            height: 50px;
+            background: plum;
+        }
+        .box .nav .logo {
+            width: 100%;
+            height: 50px;
+        }
+        .box .nav .logo img {
+            width: 30%;
+            height: 50px;
+        }
+        .nav-list {
             display: inline-block;
-            margin-left: 30px;
-            font-size: 40px;
-            cursor: pointer;
         }
-        li:hover {
-            color: white;
+        .nav-hover {
+            width: 150px;
+            height: 150px;
+            float: left;
+            overflow: hidden;
         }
-
+        .nav-hover:hover {
+	        overflow: visible;
+        }
+        .caret {
+            display: inline-block;
+        }
+        .menu a {
+            display: inline-block;
+            width: 100%;
+            color: yellow;
+        }
+        .menu a:hover {
+	        background-color: white;
+        }
+        /* 行列表前边的点隐藏 */
+        .menu > li {
+	        list-style-type: none;
+        }
+        /* 隐藏列表可见 */
+        .nav-hover:hover {
+	        overflow: visible;
+        }
     </style>
 </head>
 <body>
-    <ul class="menu">
-        <li>语文
-            
-        </li>
-        <li>数学</li>
-        <li>英语</li>
-    </ul>
+    <div class="box">
+        <div class="nav">
+            <div class="logo">
+                <img src="https://www.haizeix.com/files/system/2017/06-25/151022e72ce7760444.png">
+            </div>
+            <ul class="nav-list">
+                <li class="nav-hover">
+                    <a href="http://haizeix.com">潘多拉魔盒&nbsp;<b class="caret"></b></a>
+                    <ul class="menu">
+                        <li><a href="https://nanti.jisuanke.com/" target="_blank">计蒜客（在线交互式编码）</a></li>
+                        <li><a href="https://www.nowcoder.com/" target="_blank">牛客网（面试真题测评）</a></li>
+                        <li><a href="https://projecteuler.net" target="_blank">ProjectEuler（英文原站）</a></li>
+                        <li><a href="http://pe-cn.github.io/" target="_blank">ProjectEuler（中英对照）</a></li>
+                        <li><a href="https://leetcode-cn.com/" target="_blank">Leetcode（在线刷面试算法）</a></li>
+                        <li><a href="http://en.cppreference.com/w/" target="_blank">C/CPP 参考手册（在线文档+运行环境）</a></li>
+                        <li><a href="https://oschina.gitee.io/learn-git-branching/" target="_blank">Git 操作在线学习</a></li>
+                    </ul>
+                </li>
+                <li class="nav-hover">
+                    <a href="https://www.jisuanke.com/plan?object=%E5%85%B6%E4%BB%96&amp;subobject=%E6%B5%B7%E8%B4%BC%E5%AE%9D%E8%97%8F" target="_blank">计蒜客（海贼宝藏）  <b class="caret"></b></a>
+                    <ul class="menu">
+                        <li><a href="https://www.jisuanke.com/course/786" target="_blank">C语言程序设计</a></li>
+                        <li><a href="https://www.jisuanke.com/course/787" target="_blank">C++程序设计</a></li>
+                        <li><a href="https://www.jisuanke.com/course/788" target="_blank">Python程序设计</a></li>
+                        <li><a href="https://www.jisuanke.com/course/789" target="_blank">工程实践基础</a></li>
+                        <li><a href="https://www.jisuanke.com/course/790" target="_blank">面向对象编程（轮子哥）</a></li>
+                        <li><a href="https://www.jisuanke.com/course/791" target="_blank">操作系统入门与系统编程</a></li>
+                        <li><a href="https://www.jisuanke.com/course/792" target="_blank">数据结构</a></li>
+                        <li><a href="https://www.jisuanke.com/course/799" target="_blank">求职算法辅导</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
