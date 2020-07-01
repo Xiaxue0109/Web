@@ -10,8 +10,11 @@
             margin: 0;
         }
         .father {
+            width: 100px;
             border: 10px solid #abcdef;
             padding: 5px;
+            /* 水平居中 */
+            margin: 0 auto;
         }
         .father > div {
             /* 宽度内容区的大小 */
@@ -24,6 +27,22 @@
             box-sizing: border-box;
             margin: 5px;
         }
+        .div2 {
+            display: inline-block;
+            border: 5px solid #c1c1c1;
+            margin-top: 100px;
+            padding: 100px;
+            /* overflow: hidden; 
+            子元素被隐藏了 */
+        }
+        .div2 > div {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            /* margin设置 负值就是向着这个方向移动 
+                          正值就是远离这个方向移动*/
+            margin-top: -200px;
+        }
     </style>
 </head>
 <body>
@@ -32,6 +51,9 @@
         <div></div>
         <div></div>
         <div></div>
+        <div></div>
+    </div>
+    <div class="div2">
         <div></div>
     </div>
 </body>
