@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.grid1 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: 200px;
+    margin-bottom: 20px;
+}
+.grid-item1 {
+    background-color: #aabbff;
+}
+.grid-item2 {
+    background-color: #aaffff;
+}
+.grid2 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 200px;
+}
+.grid-item3 {
+    background-color: #aaddff;
+}
+.grid-center {
+    background-color: #aaeeee;
+}
+.grid-item4 {
+    background-color: #aaffdd;
+}
