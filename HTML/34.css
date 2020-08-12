@@ -1,0 +1,73 @@
+.cube { 
+    margin: 200px; 
+    transform-style: preserve-3d; 
+    animation: alternate infinite cube 900ms; 
+} 
+   
+.plane { 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    width: 200px; 
+    height: 200px; 
+    background-color: mediumseagreen; 
+    opacity: 0.5; 
+} 
+   
+.plane4 { 
+    transform: translateZ(100px); 
+    background-color: rgb(119, 28, 204); 
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px;
+} 
+   
+.plane1 { 
+    transform: translateZ(-100px); 
+    background-color: olive; 
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px;
+} 
+   
+.plane2 { 
+    transform: rotateY(-90deg) translateZ(-100px); 
+    background-color: mediumvioletred; 
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px;
+} 
+   
+.plane3 { 
+    transform: rotateY(-90deg) translateZ(100px); 
+    background-color: rgb(29, 158, 180);
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px; 
+} 
+   
+.plane5 { 
+    transform: rotateX(-90deg) translateZ(-100px); 
+    background-color: rgb(65, 214, 19); 
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px;
+} 
+   
+.plane6 { 
+    transform: rotateX(-90deg) translateZ(100px); 
+    background-color: rgb(51, 32, 224);
+    text-align: center;
+    font-size: 150px;
+    line-height: 200px; 
+} 
+   
+@keyframes cube { 
+    0% { 
+      transform: rotate3d(1, 1, 1, -45deg); 
+    } 
+   
+    100% { 
+      transform: rotate3d(1, 1, 1, -120deg); 
+    } 
+}
