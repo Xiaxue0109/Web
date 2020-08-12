@@ -1,0 +1,55 @@
+.cube{   
+    margin: 200px;
+    transform-style: preserve-3d;
+    animation-name: cube;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+}
+.plane{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    opacity: 0.8;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.plane4{
+    transform: translateZ(100px);
+    background-color: yellow;
+}
+.plane1{
+    transform: translateZ(-100px);
+    background-color:antiquewhite;
+}
+.plane2{
+    transform: rotateY(-90deg) translateZ(-100px);
+    background-color: forestgreen;
+}
+.plane3{
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: pink;
+}
+.plane5{
+    transform: rotateX(-90deg) translateZ(100px) ;
+    background-color: orange;
+}
+.plane6{
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: blueviolet;
+}
+@keyframes cube {
+    0% {
+    transform:rotate3d(1, 1, 360deg, 0) ;
+    }
+    100%{
+    transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+.line{
+border: 1px solid black;
+border-radius: 5px;
+}
