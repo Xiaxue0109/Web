@@ -4,5 +4,5 @@ for (let i = 1; i <= 9; i++) {
         output += i + " * " + j + " = " + i * j + "\xa0\xa0\xa0\xa0";
     }
     console.log(output);
-    output = "";
+    output = ""; //清空， 去除重复元素
 }
